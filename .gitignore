@@ -1,0 +1,36 @@
+# Konfigurasi Lingkungan & Kredensial Lokal
+.env
+config/database.local.php
+
+# Berkas Ekspor & Temporary Data
+*.csv
+*.xlsx
+*.pdf
+*.log
+error_log
+
+# Upload Direktori (jika ditambahkan di masa depan)
+uploads/*
+!uploads/.gitkeep
+
+# Dependency Manager
+/vendor/
+composer.phar
+
+# Editor & OS Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Backup & Arsip
+*.bak
+*.tmp
+*.swp
+*~
+*.sql.gz
+*.tar.gz
+*.zip
