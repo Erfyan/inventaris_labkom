@@ -1,0 +1,250 @@
+/* Main application styles - Inventaris Labkom SMKN 3 Soppeng */
+:root {
+    --app-bg: #f8fafc;
+    --primary-color: #0284c7;
+    --primary-hover: #0369a1;
+    --sidebar-bg: #0f172a;
+    --sidebar-dark: #020617;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--app-bg);
+    color: #1e293b;
+}
+
+.logo-sekolah {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-stat {
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-stat:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+}
+
+.card-stat .icon {
+    font-size: 2.25rem;
+    opacity: 0.85;
+}
+
+.content-area {
+    padding-top: 1rem;
+}
+
+/* Bootstrap 5 compatibility helpers for AdminLTE (Bootstrap 4) */
+.display-6 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-semibold {
+    font-weight: 600 !important;
+}
+
+.rounded-4 {
+    border-radius: 0.75rem !important;
+}
+
+.text-end {
+    text-align: right !important;
+}
+
+.text-start {
+    text-align: left !important;
+}
+
+.text-bg-danger {
+    color: #fff !important;
+    background-color: #ef4444 !important;
+}
+
+.text-bg-primary {
+    color: #fff !important;
+    background-color: #0284c7 !important;
+}
+
+.text-bg-warning {
+    color: #1e293b !important;
+    background-color: #f59e0b !important;
+}
+
+/* Spacing utilities (me/ms compatibility) */
+.me-0 { margin-right: 0 !important; }
+.me-1 { margin-right: 0.25rem !important; }
+.me-2 { margin-right: 0.5rem !important; }
+.me-3 { margin-right: 1rem !important; }
+.ms-1 { margin-left: 0.25rem !important; }
+.ms-2 { margin-left: 0.5rem !important; }
+.ms-3 { margin-left: 1rem !important; }
+
+/* Row gutter utilities */
+.row.g-1 { margin-left: -0.25rem; margin-right: -0.25rem; }
+.row.g-1 > [class*="col-"] { padding-left: 0.25rem; padding-right: 0.25rem; }
+.row.g-2 { margin-left: -0.5rem; margin-right: -0.5rem; }
+.row.g-2 > [class*="col-"] { padding-left: 0.5rem; padding-right: 0.5rem; }
+.row.g-3 { margin-left: -0.75rem; margin-right: -0.75rem; }
+.row.g-3 > [class*="col-"] { padding-left: 0.75rem; padding-right: 0.75rem; }
+.row.g-4 { margin-left: -1rem; margin-right: -1rem; }
+.row.g-4 > [class*="col-"] { padding-left: 1rem; padding-right: 1rem; }
+
+/* Gap utilities */
+.gap-1 { gap: 0.25rem !important; }
+.gap-2 { gap: 0.5rem !important; }
+.gap-3 { gap: 1rem !important; }
+.gap-4 { gap: 1.5rem !important; }
+
+/* Form-style enhancements */
+.form-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+.form-control, .form-select {
+    border-radius: 0.5rem;
+    border: 1px solid #cbd5e1;
+    padding: 0.45rem 0.75rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+}
+
+/* Table polishing */
+.table {
+    color: #334155;
+}
+
+.table th {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #64748b;
+    border-top: none;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.table td {
+    vertical-align: middle;
+    border-top: 1px solid #f1f5f9;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Badge polish */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+    border-radius: 0.375rem;
+}
+
+/* Card aesthetics */
+.card {
+    border-radius: 0.75rem;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.card-header {
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Button helpers */
+.btn {
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-sm {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 0.375rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.btn-outline-success {
+    color: #16a34a;
+    border-color: #86efac;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #16a34a;
+    border-color: #16a34a;
+}
+
+.btn-outline-secondary {
+    color: #64748b;
+    border-color: #cbd5e1;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #64748b;
+    border-color: #64748b;
+}
+
+/* Print styles */
+@media print {
+    .no-print, .main-sidebar, .main-header, .main-footer {
+        display: none !important;
+    }
+    .content-wrapper {
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+    .print-only {
+        display: block !important;
+    }
+}
+@media screen {
+    .print-only {
+        display: none;
+    }
+}
